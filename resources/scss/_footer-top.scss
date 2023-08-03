@@ -1,0 +1,37 @@
+.footer-top {
+    height: 380px;
+    background-image: url(../../public/images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .container {
+        height: 100%;
+        display: flex;
+        background-image: url(../../public/images/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 53%;
+    }
+    
+    .box-left {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box-left,
+    .box-center,
+    .box-right {
+        margin: 30px 30px 30px 0;
+        
+    }
+    
+    h3 {
+        margin: 10px 0;
+        color: white;
+    }
+    
+    a {
+        font-size: 0.8rem;
+        color: gray;
+    }
+}
