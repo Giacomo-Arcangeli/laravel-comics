@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    .comic-fig {
+        width: 200px;
+        height: 230px;
+    }
+    
+    h4 {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+}
