@@ -1,13 +1,13 @@
+<?php $links = config('header_links'); ?>
+
+
 <header class="container">
-    <img src="{{ asset('images/dc-logo.png') }}" alt="">
+    <a href="{{ route('home') }}"><img src="{{ asset('images/dc-logo.png') }}" alt=""></a>
     <nav>
         <ul>
-            {{-- <li v-for="link in links" :key="link.text">
-                <a :href="link.url">{{ link . text }}</a>
-            </li> --}}
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
+            @foreach ($links as $link)
+                <li><a href="{{ route($link['route']) }}">{{ $link['text'] }}</a></li>
+            @endforeach
             <li>TV</li>
             <li>Games</li>
             <li>Collectibles</li>
