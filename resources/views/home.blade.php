@@ -12,13 +12,12 @@
                 <h2 class="series">CURRENT SERIES</h2>
             </div>
             <div class="card-container container">
-                {{-- <ComicCard v-for="comic in comics" :key="comic.series" :comic="comic" /> --}}
-                <div class="card">
-                    <img class="comic-fig"
-                        src="https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY"
-                        alt="comic.series">
-                    <h4>Action Comics</h4>
-                </div>
+                @foreach ($comics as $comic)
+                    <div class="card">
+                        <img class="comic-fig" src="{{ $comic['thumb'] }}">
+                        <h4>{{ $comic['title'] }}</h4>
+                    </div>
+                @endforeach
             </div>
             <div class="container center">
                 <h3 class="load">LOAD MORE</h3>
