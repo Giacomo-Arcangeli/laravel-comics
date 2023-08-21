@@ -1,0 +1,31 @@
+.comic-detail{
+
+    figure {
+        background-image: url(../../public/images/jumbotron.jpg);
+        height: 400px;
+    }
+    
+    .banner{
+        height: 40px;
+        background-color: rgb(2, 130, 249);
+    }
+    img{
+        width: 300px;
+        margin-top: 20px;
+    }
+    .description-box{
+        display: flex;
+        background-color: lightgrey;
+    }
+    .box{
+        flex-basis: calc(100% / 3);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    h1 , h3 {
+        margin: 20px 0;
+    }
+    p{
+        line-height: 1.7;
+    }
+}
